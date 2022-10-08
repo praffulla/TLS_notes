@@ -1,0 +1,7 @@
+Alice                                                               Bob
+a,g,p                                                               b  [Bob received g and p from Alice]
+
+A = (g^a)mod p                                                      B = (g^b)mod p
+
+K = (B^a)mod p                                                      K = (A^b)mod p
+
