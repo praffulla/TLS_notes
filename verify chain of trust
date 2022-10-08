@@ -1,0 +1,7 @@
+Webservers sends all the certificates including root CA.
+
+Client looks are following:
+
+ 1. If certifcate is valid => time check
+ 2. Verify signatures => Lets say Root CA (RCA) has to verify Leaf Cert (LC1). RCA will decrypt signature on LC1 with its public key. It will get the hash 
+                         of LC1 cert. Now RCA will calculate hash of LC1 and match if has matches. If we trust ROOT CA, we trust entire chain.  
