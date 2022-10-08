@@ -1,0 +1,5 @@
+Hash algorithm computes the digest which can be used for integrity check. But assume, attacker swapped the (message + digest) with another
+(message + digest)' then how reciever will know that this is the message sent from sender. ??
+
+Therefor HMAC => HMAC is nothing but used any Hash algorithm with private key to create seed for hash algorithm. This way if attacker swapped 
+the message, then hmac verification will fail.
